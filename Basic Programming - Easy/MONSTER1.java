@@ -4,16 +4,20 @@
 
 import java.util.Scanner;
 
-class MONSTER1 {
+class MONSTER1{
     
-	public static void main (String[] args) {
-		Scanner in = new Scanner(System.in);
-		int t = in.nextInt();
-		while(t-->0) {
-		    int h = in.nextInt();
-		    int x = in.nextInt();
-		    int y = in.nextInt();
-		    System.out.printf("%d\n", (x > y) ? 1 : 0);
-		}
+	public static void main (String[] args) throws java.io.IOException {
+	    try {
+    		Scanner in = new Scanner ( System.in );
+    		int t = in.nextInt();
+    		while(t-->0){
+    		    long h = in.nextLong();
+    		    long x = in.nextLong();
+    		    long y = in.nextLong();
+    		    System.out.println((x > y) ? 1 : 0);
+    		}
+	    } catch (Exception e) {
+	        return ;
+	    }
 	}
 }
